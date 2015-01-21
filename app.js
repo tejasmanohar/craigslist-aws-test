@@ -4,7 +4,15 @@ var request = require('request');
 var port = process.env.PORT || 5000;
 
 app.get('/', function(req, res) {
-  res.sendStatus(200);
+  request('http://sfbay.craigslist.org/search/apa?query=cheap', function (error, response, body) {
+    if (!error && response.statusCode == 200) {
+      console.log(body);
+      res.sendStatus(200);
+    } else {
+      console.log(error);
+      res.sendStatus(500);
+    }
+  });
 });
 
 
