@@ -1,0 +1,23 @@
+{
+  "name": "craigslist-aws-test",
+  "version": "0.0.0",
+  "description": "trying to access craigslist on aws servers including heroku",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tejasmanohar/craigslist-aws-test.git"
+  },
+  "author": "Tejas Manohar <me@tejasmanohar.com> (https://tejas.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tejasmanohar/craigslist-aws-test/issues"
+  },
+  "homepage": "https://github.com/tejasmanohar/craigslist-aws-test",
+  "dependencies": {
+    "express": "^4.11.0",
+    "request": "^2.51.0"
+  }
+}
