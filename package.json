@@ -19,5 +19,8 @@
   "dependencies": {
     "express": "^4.11.0",
     "request": "^2.51.0"
+  },
+  "engines": {
+    "node": "0.10.35"
   }
 }
