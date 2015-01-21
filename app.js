@@ -8,7 +8,7 @@ app.get('/', function(req, res) {
     if (!error && response.statusCode == 200) {
       res.sendStatus(200);
       console.log(body);
-      if(res.body.indexOf("<time datetime=\"") > 0) {
+      if(body.indexOf("<time datetime=\"") > 0) {
         console.log('success');
       }
     } else {
