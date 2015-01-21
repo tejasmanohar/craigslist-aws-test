@@ -6,11 +6,14 @@ var port = process.env.PORT || 3000;
 app.get('/', function(req, res) {
   request('http://sfbay.craigslist.org/search/apa?query=cheap', function (error, response, body) {
     if (!error && response.statusCode == 200) {
-      console.log(body);
       res.sendStatus(200);
+      console.log(body);
+      if(res.body.indexOf("<time datetime=\"") > 0) {
+        console.log('success');
+      }
     } else {
-      console.log(error);
       res.sendStatus(500);
+      console.log(error);
     }
   });
 });
